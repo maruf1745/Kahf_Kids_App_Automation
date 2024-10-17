@@ -77,7 +77,7 @@ module.exports = {
       webdriver: {
         timeout_options: {
           timeout: 150000,
-          retry_attempts: 3
+          retry_attempts: 1
         },
         keep_alive: false,
         start_process: false
@@ -99,10 +99,19 @@ module.exports = {
           avd: 'nightwatch-android-11',
           // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
           // Appium v2 does not support relative paths.
-          app: `${__dirname}/nightwatch/sample-apps/wikipedia.apk`,
-          appPackage: 'org.wikipedia',
-          appActivity: 'org.wikipedia.main.MainActivity',
-          appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',
+
+          //Wikipedia
+          //app: `${__dirname}/nightwatch/sample-apps/wikipedia.apk`,
+          //appPackage: 'org.wikipedia',
+          //appActivity: 'org.wikipedia.main.MainActivity',
+          //appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',
+
+          //Kahf Kids
+          app: `${__dirname}/nightwatch/sample-apps/kahfkids.apk`,
+          appPackage: 'com.kahf.kids',
+          appActivity: 'com.kahf.kids.MainActivity',
+          //appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',  
+
           // chromedriver executable to use for testing web-views in hybrid apps
           chromedriverExecutable: `${__dirname}/chromedriver-mobile/chromedriver.exe`,
           newCommandTimeout: 0
@@ -123,10 +132,19 @@ module.exports = {
           automationName: 'UiAutomator2',
           // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
           // Appium v2 does not support relative paths.
-          app: `${__dirname}/nightwatch/sample-apps/wikipedia.apk`,
-          appPackage: 'org.wikipedia',
-          appActivity: 'org.wikipedia.main.MainActivity',
-          appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',
+
+          //Wikipedia
+          //app: `${__dirname}/nightwatch/sample-apps/wikipedia.apk`,
+          //appPackage: 'org.wikipedia',
+          //appActivity: 'org.wikipedia.main.MainActivity',
+          //appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',
+
+          //Kahf Kids
+          app: `${__dirname}/nightwatch/sample-apps/kahfkids.apk`,
+          appPackage: 'com.kahf.kids',
+          appActivity: 'com.kahf.kids.MainActivity',
+          //appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity', 
+
           // 'chromedriver' binary is required while testing hybrid mobile apps.
           // 
           // Set `chromedriverExecutable` to '' to use binary from `chromedriver` NPM package (if installed).
