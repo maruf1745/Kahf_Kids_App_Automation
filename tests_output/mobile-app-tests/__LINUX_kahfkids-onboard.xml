@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="4">
 
   <testsuite name="mobile-app-tests.kahfkids-onboard"
     errors="0" failures="0" hostname="" id="" package="mobile-app-tests" skipped="0"
-    tests="1" time="144.1" timestamp="">
+    tests="4" time="103.5" timestamp="">
   
-    <testcase name="Kahf Kids Parents Onboard" classname="mobile-app-tests.kahfkids-onboard" time="70.38" assertions="0">
+    <testcase name="Set the Parental lock with invalid pin(less or more than the 4 digit)" classname="mobile-app-tests.kahfkids-onboard" time="9.155" assertions="0">
+    </testcase>
+  
+    <testcase name="Set the Parental lock with valid pin(4 digit)" classname="mobile-app-tests.kahfkids-onboard" time="10.62" assertions="0">
+    </testcase>
+  
+    <testcase name="Verify the Parental lock for the invalid pin(wrong pin or less or more than the 4 digit)" classname="mobile-app-tests.kahfkids-onboard" time="12.21" assertions="0">
+    </testcase>
+  
+    <testcase name="Verify the Parental lock for the valid pin(4 digit)" classname="mobile-app-tests.kahfkids-onboard" time="18.39" assertions="0">
     </testcase>
   
 
